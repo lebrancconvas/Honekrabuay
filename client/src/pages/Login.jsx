@@ -5,9 +5,16 @@ import {Box} from '@mui/system';
 const Login = () => {
 	const [username, setUsername] = useState(''); 
 	const [password, setPassword] = useState(''); 
-	const [email, setEmail] = useState('');  
-	const handleSubmit = () => {
-		alert(`{Username: ${username}, Password: ${password}, Email: ${email}}`); 
+	const handleSubmit = async (event) => {
+		event.preventDefault(); 
+		await fetch('http://localhost:3002/api/registeruser', {
+			method: 'POST',
+			headers: {'Content-Type': 'application/json'},
+			body: JSON.stringify({
+				username, password 
+			})
+		})
+
 	}
 	return (
 		<div>
@@ -22,10 +29,7 @@ const Login = () => {
 						<TextField type="text" name="Username" placeholder="Username" onChange={e => setUsername(e.target.value)} required/>
 					</Box>
 					<Box mt={2}>
-						<TextField type="email" name="E-Mail" placeholder="E-Mail" onChange={e => setPassword(e.target.value)} required/>
-					</Box>
-					<Box mt={2}>
-						<TextField type="password" name="Password" placeholder="Password" onChange={e => setEmail(e.target.value)} required/> 
+						<TextField type="password" name="Password" placeholder="Password" onChange={e => setPassword(e.target.value)} required/> 
 					</Box>
 					<Box mt={2}> 
 						<Button type="submit" variant="contained">Submit</Button>  
