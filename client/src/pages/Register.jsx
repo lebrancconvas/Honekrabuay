@@ -39,12 +39,12 @@ const Register = () => {
 	}
 	return (
 		<div>
-			<Box>
+			<Box sx={{textAlign: 'center'}} mt={20}>   
 				<Typography variant="h3"> 
 					Register 
 				</Typography>
 			</Box>
-			<Box>
+			<Box sx={{textAlign: 'center'}}> 
 				<form onSubmit={handleSubmit}> 
 					<Box mt={3}>
 						<TextField sx={{width: 500}} type="text" name="Username" placeholder="Username" onChange={e => setUsername(e.target.value)} required/>

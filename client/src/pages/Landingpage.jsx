@@ -9,12 +9,12 @@ const Landingpage = () => {
 	const toLogin = () => navigator('/login');  
 	return (
 		<div>
-			<Box>
+			<Box sx={{textAlign: 'center'}} mt={20}> 
 				<Typography variant="h3"> 
 					Honekrabuay 
 				</Typography>
 			</Box>
-			<Box mt={3}>
+			<Box sx={{textAlign: 'center'}}mt={3}>
 				<Typography>
 					<Button variant="contained" sx={{mr: 5}} onClick={toRegister}>Get Started</Button>  
 					<Button variant="contained" onClick={toLogin}>Login</Button>  
