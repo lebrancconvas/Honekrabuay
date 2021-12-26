@@ -47,13 +47,13 @@ const Register = () => {
 			<Box>
 				<form onSubmit={handleSubmit}> 
 					<Box mt={3}>
-						<TextField type="text" name="Username" placeholder="Username" onChange={e => setUsername(e.target.value)} required/>
+						<TextField sx={{width: 500}} type="text" name="Username" placeholder="Username" onChange={e => setUsername(e.target.value)} required/>
 					</Box>
 					<Box mt={2}>
-						<TextField type="email" name="E-Mail" placeholder="E-Mail" onChange={e => setEmail(e.target.value)} required/>
+						<TextField sx={{width: 500}} type="email" name="E-Mail" placeholder="E-Mail" onChange={e => setEmail(e.target.value)} required/>
 					</Box>
 					<Box mt={2}> 
-						<TextField type="password" name="Password" placeholder="Password" onChange={e => setPassword(e.target.value)} required/> 
+						<TextField sx={{width: 500}} type="password" name="Password" placeholder="Password" onChange={e => setPassword(e.target.value)} required/> 
 					</Box>
 					<Box mt={2}> 
 						<Button type="submit" variant="contained">Submit</Button>  
