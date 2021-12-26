@@ -2,7 +2,7 @@
 
 ## Overview
 
-Platfrom for requesting any social issues to be broadcasted on Top-Mosted Popular TV Show.  
+Platfrom for requesting any social issues to be broadcasted on Top-Mosted Popular TV Show (Parody).   
 
 ## Purpose
 
