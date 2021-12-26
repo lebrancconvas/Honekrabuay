@@ -8,7 +8,7 @@ Platfrom for requesting any social issues to be broadcasted on Top-Mosted Popula
 
 ## Feature
 
-[Feature Update](https://github.com/lebrancconvas/Honekrabuay/Version)
+[Feature Update](https://github.com/lebrancconvas/Honekrabuay/tree/master/Version) 
 
 ## Tools
 
