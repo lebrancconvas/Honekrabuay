@@ -15,7 +15,12 @@ const Login = () => {
 			})
 		})
 		const data = await response.json(); 
-		console.log(data); 
+		if(data.user) {
+			alert('Login Success.');
+		} else {
+			alert('Login Failed, Please Check your username and/or password.'); 
+			window.location.reload(); 
+		}
 	}
 	return (
 		<div>
