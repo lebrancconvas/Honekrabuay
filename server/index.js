@@ -4,10 +4,14 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const User = require('./models/user.model');
 const jwt = require('jsonwebtoken');
+const TokenSecurity = require('./security/secret');
 
 const port = process.env.PORT || 3002;
 
 const dbURL = 'mongodb://127.0.0.1:27017/honekrabuay';
+
+
+const secretToken = TokenSecurity.secret;
 
 app.use(cors()); // Just use in development environment. 
 app.use(express.json());
@@ -43,8 +47,8 @@ app.post('/api/loginuser', async(req, res) => {
         const token = jwt.sign({
             username: user.username,
             email: user.email
-        }, 'ganchahonekrabuay1298');
-        return res.json({ status: 'Server is ok.', user: true });
+        }, secretToken);
+        return res.json({ status: 'Server is ok.', user: token });
     } else {
         return res.json({ status: 'error', user: false });
     }
