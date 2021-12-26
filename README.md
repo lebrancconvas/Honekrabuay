@@ -8,18 +8,20 @@ Platfrom for requesting any social issues to be broadcasted on Top-Mosted Popula
 
 ## Feature
 
-[Feature Update](https://github.com/lebrancconvas/Honekrabuay/tree/master/Version) 
+[Feature Update](https://github.com/lebrancconvas/Honekrabuay/tree/master/Version)
 
 ## Tools
 
 ### Front-End
 
 - ReactJS
-- Material UI
+  - React Router
+  - Material UI
 
 ### Back-End
 
 - ExpressJS (NodeJS)
+  - JSON Web Token
 
 ### Database
 
