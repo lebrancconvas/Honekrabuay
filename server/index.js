@@ -34,9 +34,14 @@ app.post('/api/registeruser', async(req, res) => {
         res.json({ status: 'Server is ok.' });
 
     } catch {
-        const checkDuplicate = await User.findOne({ username: req.body.username }) || User.findOne({ email: req.body.email });
-        if (checkDuplicate) {
-            res.status(422).json({ status: 'Cannot Register.', error: 'Username and/or Email are already taken.' });
+        const checkDuplicateUsername = await User.findOne({ username: req.body.username });
+        const checkDuplicateEmail = await User.findOne({ email: req.body.email });
+        if (checkDuplicateUsername && !checkDuplicateEmail) {
+            res.status(422).json({ status: 'Cannot Register.', error: 'Username is already taken.' });
+        } else if (checkDuplicateEmail && !checkDuplicateUsername) {
+            res.status(422).json({ status: 'Cannot Register.', error: 'Email is already taken.' });
+        } else if (checkDuplicateUsername && checkDuplicateEmail) {
+            res.status(422).json({ status: 'Cannot Register.', error: 'Username and Email are already taken.' });
         } else {
             res.status(400).json({ status: 'Server is error.', error: 'Registration is failed.' });
         }
