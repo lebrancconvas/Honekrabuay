@@ -23,7 +23,6 @@ const Register = () => {
 			alert("Registration Success.") 
 			setRedirect(true); 
 		} else if(data.error === 'Username is already taken.') {
-			console.log(data); 
 			alert("Username is already taken."); 
 			window.location.reload(); 
 		} else if(data.error === 'Email is already taken.') {
