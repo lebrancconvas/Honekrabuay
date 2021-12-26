@@ -1,7 +1,7 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'; 
 import {Typography} from '@mui/material'; 
 import {Box} from '@mui/system';
-import Homepage from './pages/Homepage'; 
+import Landingpage from './pages/Landingpage'; 
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
             <Box sx={{textAlign: 'center'}}>
                 <Typography> 
                     <Routes>
-                        <Route exact path="/" element={<Homepage />} /> 
+                        <Route exact path="/" element={<Landingpage />} /> 
                     </Routes>
                 </Typography>
             </Box>
