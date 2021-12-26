@@ -30,9 +30,16 @@ app.post('/api/registeruser', async(req, res) => {
             email: req.body.email,
             password: req.body.password
         })
+
         res.json({ status: 'Server is ok.' });
+
     } catch {
-        res.json({ status: 'Server is error.', error: 'Registration is failed.' });
+        const checkDuplicate = await User.findOne({ username: req.body.username }) || User.findOne({ email: req.body.email });
+        if (checkDuplicate) {
+            res.status(422).json({ status: 'Cannot Register.', error: 'Username and/or Email are already taken.' });
+        } else {
+            res.status(400).json({ status: 'Server is error.', error: 'Registration is failed.' });
+        }
     }
 })
 
