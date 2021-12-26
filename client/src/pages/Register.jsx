@@ -1,20 +1,35 @@
 import React, {useState} from 'react'; 
+import {Navigate} from 'react-router-dom'; 
 import {Typography, TextField, Button} from '@mui/material'; 
 import {Box} from '@mui/system'; 
 
 const Register = () => {
 	const [username, setUsername] = useState(''); 
 	const [password, setPassword] = useState(''); 
+	const [redirect, setRedirect] = useState(false); 
 	const [email, setEmail] = useState('');  
 	const handleSubmit = async (event) => {
 		event.preventDefault(); 
-		await fetch('http://localhost:3002/api/registeruser', { 
+		const response = await fetch('http://localhost:3002/api/registeruser', { 
 			method: 'POST',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
 				username, email, password 
 			})
 		})
+
+		const data = await response.json(); 
+		if(data.status === 'Server is ok.') { 
+			alert("Registration Success.") 
+			setRedirect(true); 
+		} else {
+			alert("Username and/or Email are already taken."); 
+			window.location.reload(); 
+		}
+	}
+
+	if(redirect) {
+		return <Navigate to="/login" /> 
 	}
 	return (
 		<div>
