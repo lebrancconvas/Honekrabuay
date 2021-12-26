@@ -2,11 +2,13 @@
 
 ## Overview
 
-Platfrom for requesting any social issues to be broadcasted on Top-Mosted Popular TV Show (Parody).   
+Platfrom for requesting any social issues to be broadcasted on Top-Mosted Popular TV Show (Parody).
 
 ## Purpose
 
 ## Feature
+
+[Feature Update](https://github.com/lebrancconvas/Honekrabuay/Version)
 
 ## Tools
 
