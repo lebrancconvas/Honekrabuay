@@ -6,10 +6,12 @@ const User = require('./models/user.model');
 
 const port = process.env.PORT || 3002;
 
+const dbURL = 'mongodb://127.0.0.1:27017/honekrabuay';
+
 app.use(cors()); // Just use in development environment. 
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/Honekrabuay-Project');
+mongoose.connect(dbURL);
 
 app.get('/', (req, res) => {
     res.send('Test Server: Server is OK!');
