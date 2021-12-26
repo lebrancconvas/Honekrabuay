@@ -6,8 +6,8 @@ const Landingpage = () => {
 	return (
 		<div>
 			<Box>
-				<Typography variant="h5">
-					<h1>Honekrabuay</h1> 
+				<Typography variant="h3"> 
+					Honekrabuay 
 				</Typography>
 			</Box>
 		</div>
