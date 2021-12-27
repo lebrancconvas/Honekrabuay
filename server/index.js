@@ -20,7 +20,7 @@ mongoose.connect(dbURL);
 
 app.get('/', (req, res) => {
     res.send('Test Server: Server is OK!');
-})
+});
 
 app.post('/api/registeruser', async(req, res) => {
     console.log(req.body);
@@ -46,7 +46,7 @@ app.post('/api/registeruser', async(req, res) => {
             res.status(400).json({ status: 'Server is error.', error: 'Registration is failed.' });
         }
     }
-})
+});
 
 app.post('/api/loginuser', async(req, res) => {
     console.log(req.body);
@@ -64,8 +64,8 @@ app.post('/api/loginuser', async(req, res) => {
     } else {
         return res.json({ status: 'error', user: false });
     }
-})
+});
 
 app.listen(port, () => {
     console.log(`Server Opening at PORT: ${port}`);
-})
+});
