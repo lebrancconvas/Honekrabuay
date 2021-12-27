@@ -5,15 +5,19 @@ import {Box} from '@mui/system';
 
 const Navbar = () => {
 	const navigator = useNavigate(); 
-	const onHome = () => navigator('/'); 
+	const toHome = () => navigator('/'); 
+	const toRegister = () => navigator('/register'); 
+	const toLogin = () => navigator('/login');  
 	return (
 		<div>
 			<Box sx={{flexGrow: 1}}> 
-				<AppBar> 
+				<AppBar>   
 					<Toolbar>
-						<Typography variant="h6" component="div" sx={{flexGrow: 1}} style={{cursor: 'pointer'}} onClick={onHome}> 
+						<Typography variant="h6" component="div" sx={{flexGrow: 1}} style={{cursor: 'pointer'}} onClick={toHome}> 
 							Honekrabuay
 						</Typography>
+						<Button color="inherit" onClick={toRegister}>Register</Button> 
+						<Button color="inherit" onClick={toLogin}>Login</Button>
 					</Toolbar>
 				</AppBar>
 			</Box>
