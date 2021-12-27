@@ -9,7 +9,7 @@ const Landingpage = () => {
 	const toLogin = () => navigator('/login');  
 	return (
 		<div>
-			<Box sx={{textAlign: 'center'}} mt={20}> 
+			<Box sx={{textAlign: 'center'}} mt={30}>  
 				<Typography variant="h3"> 
 					Honekrabuay 
 				</Typography>
