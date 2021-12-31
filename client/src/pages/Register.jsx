@@ -41,7 +41,7 @@ const Register = () => {
 		<div>
 			<Box sx={{textAlign: 'center'}} mt={20}>   
 				<Typography variant="h3"> 
-					Register 
+					สมัครเข้าใช้งาน 
 				</Typography>
 			</Box>
 			<Box sx={{textAlign: 'center'}}> 

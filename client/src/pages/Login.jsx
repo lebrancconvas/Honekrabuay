@@ -26,7 +26,7 @@ const Login = () => {
 		<div>
 			<Box sx={{textAlign: 'center'}} mt={20}> 
 				<Typography variant="h3"> 
-					Login  
+					ลงชื่อผู้ใช้งาน 
 				</Typography> 
 			</Box>
 			<Box sx={{textAlign: 'center'}}>
