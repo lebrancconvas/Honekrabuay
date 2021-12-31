@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
     res.send('Test Server: Server is OK!');
 });
 
-app.post('/api/registeruser', async(req, res) => {
+app.post('/api/auth/registeruser', async(req, res) => {
     console.log(req.body);
     try {
         const user = await User.create({
@@ -48,7 +48,7 @@ app.post('/api/registeruser', async(req, res) => {
     }
 });
 
-app.post('/api/loginuser', async(req, res) => {
+app.post('/api/auth/loginuser', async(req, res) => {
     console.log(req.body);
     const user = await User.findOne({
         username: req.body.username,
@@ -65,6 +65,20 @@ app.post('/api/loginuser', async(req, res) => {
         return res.json({ status: 'error', user: false });
     }
 });
+
+app.post('/api/userissue', async(req, res) => {
+    try {
+        const issue = await Issue.create({
+            name: req.body.name,
+            address: req.body.address,
+            topic: req.body.topic,
+            content: req.body.content
+        });
+        res.json({ status: 'The issue is posting completely.' });
+    } catch (err) {
+        res.status(400).json({ status: 'Failed to post an issue.', error: err });
+    }
+})
 
 app.listen(port, () => {
     console.log(`Server Opening at PORT: ${port}`);
