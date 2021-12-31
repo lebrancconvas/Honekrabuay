@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<div>
 			<footer>
-				<Box bgcolor="secondary">
+				<Box bgcolor="secondary" sx={{textAlign: 'center'}}>
 					<Container maxWidth="lg">
 						Made with <Link href="https://www.mongodb.com/mern-stack" target="_blank">MERN Stack</Link> by <Link href="https://github.com/lebrancconvas" target="_blank">Poom</Link> in 2021. 
 					</Container>
