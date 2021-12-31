@@ -10,7 +10,7 @@ const Register = () => {
 	const [email, setEmail] = useState('');  
 	const handleSubmit = async (event) => {
 		event.preventDefault(); 
-		const response = await fetch('http://localhost:3002/api/registeruser', { 
+		const response = await fetch('http://localhost:3002/api/auth/registeruser', { 
 			method: 'POST',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({

@@ -7,7 +7,7 @@ const Login = () => {
 	const [password, setPassword] = useState(''); 
 	const handleSubmit = async (event) => {
 		event.preventDefault(); 
-		const response = await fetch('http://localhost:3002/api/loginuser', {
+		const response = await fetch('http://localhost:3002/api/auth/loginuser', {
 			method: 'POST',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
