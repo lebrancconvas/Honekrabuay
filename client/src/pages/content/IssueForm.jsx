@@ -21,30 +21,32 @@ const IssueForm = () => {
 
 	return (
 		<div>
-			<Box>
-				<Typography>
-					Please Filled the information here. 
-				</Typography>
+			<Box sx={{textAlign: 'center'}}>
+				<Box>
+					<Typography>
+						Please Filled the information here. 
+					</Typography>
+				</Box>
+				<form onSubmit={handleIssue}>
+					<Box>
+						<TextField type="text" placeholder="Name" sx={{width: 500}} onChange={event => setName(event.target.value)} />
+					</Box>
+					<Box>
+						<TextField type="text" placeholder="Address" sx={{width: 500}} onChange={event => setAddress(event.target.value)} />
+					</Box>
+					<Box>
+						<TextField type="text" placeholder="Topic" sx={{width: 500}} onChange={event => setTopic(event.target.value)} />
+					</Box>
+					<Box>
+						<TextField type="text" placeholder="Content" sx={{width: 500}} onChange={event => setContent(event.target.value)} />
+					</Box>
+					<Box>
+						<Button type="submit" variant="contained">
+							Submit
+						</Button>
+					</Box>
+				</form>
 			</Box>
-			<form onSubmit={handleIssue}>
-				<Box>
-					<TextField type="text" placeholder="Name" onChange={event => setName(event.target.value)} />
-				</Box>
-				<Box>
-					<TextField type="text" placeholder="Address" onChange={event => setAddress(event.target.value)} />
-				</Box>
-				<Box>
-					<TextField type="text" placeholder="Topic" onChange={event => setTopic(event.target.value)} />
-				</Box>
-				<Box>
-					<TextField type="text" placeholder="Content" onChange={event => setContent(event.target.value)} />
-				</Box>
-				<Box>
-					<Button type="submit" variant="contained">
-						Submit
-					</Button>
-				</Box>
-			</form>
 		</div>
 	)
 }
