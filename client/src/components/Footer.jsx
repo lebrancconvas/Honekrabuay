@@ -8,7 +8,7 @@ const Footer = () => {
 			<footer>
 				<Box bgcolor="secondary" sx={{textAlign: 'center'}}>
 					<Container maxWidth="lg">
-						<Typography>
+						<Typography component="div">
 							<h2>
 								Made with <Link href="https://www.youtube.com/watch?v=7CqJlxBYj-M" target="_blank">MERN Stack</Link> by <Link href="https://github.com/lebrancconvas" target="_blank">Poom</Link> in 2021. 
 							</h2>
