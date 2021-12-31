@@ -21,28 +21,28 @@ const IssueForm = () => {
 
 	return (
 		<div>
-			<Box sx={{textAlign: 'center'}} mt={10}>
+			<Box sx={{textAlign: 'center'}} mt={12}>
 				<Box>
 					<Typography variant="h2">
-						Please Filled the information here. 
+						แจ้งเรื่องร้องเรียนกับทางรายการได้ที่นี่ 
 					</Typography>
 				</Box>
 				<form onSubmit={handleIssue}>
 					<Box mt={3}>
-						<TextField type="text" placeholder="Name" sx={{width: 500}} onChange={event => setName(event.target.value)} />
+						<TextField type="text" placeholder="กรอกชื่อของผู้ร้องเรียนปัญหา" sx={{width: 500}} onChange={event => setName(event.target.value)} required/>
 					</Box>
 					<Box mt={2}>
-						<TextField type="text" placeholder="Address" sx={{width: 500}} onChange={event => setAddress(event.target.value)} />
+						<TextField type="text" placeholder="กรอกที่อยู่ของผู้ร้องเรียน" sx={{width: 500}} onChange={event => setAddress(event.target.value)} required/>
 					</Box>
 					<Box mt={2}>
-						<TextField type="text" placeholder="Topic" sx={{width: 500}} onChange={event => setTopic(event.target.value)} />
+						<TextField type="text" placeholder="ระบุหัวข้อเรื่องที่จะร้องเรียน" sx={{width: 500}} onChange={event => setTopic(event.target.value)} required/>
 					</Box>
 					<Box mt={2}>
-						<TextField type="text" placeholder="Content" sx={{width: 500}} onChange={event => setContent(event.target.value)} />
+						<TextField type="text" placeholder="กรอกรายละเอียดของเรื่องที่จะร้องเรียน" sx={{width: 500}} multiline={true} onChange={event => setContent(event.target.value)} required/>
 					</Box>
-					<Box mt={2} mb={27}>
+					<Box mt={2} mb={23}>
 						<Button type="submit" variant="contained">
-							Submit
+							ยืนยันการร้องเรียน<br />(โปรดตรวจสอบข้อมูลที่กรอกมาว่าถูกต้องทุกประการก่อนการยืนยัน)
 						</Button>
 					</Box>
 				</form>
