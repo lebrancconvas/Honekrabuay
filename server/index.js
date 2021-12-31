@@ -3,6 +3,7 @@ const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 const User = require('./models/user.model');
+const Issue = require('./models/issue.model');
 const jwt = require('jsonwebtoken');
 const TokenSecurity = require('./security/secret');
 
