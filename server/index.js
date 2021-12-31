@@ -72,6 +72,7 @@ app.post('/api/userissue', async(req, res) => {
         const issue = await Issue.create({
             name: req.body.name,
             address: req.body.address,
+            telephone: req.body.telephone,
             topic: req.body.topic,
             content: req.body.content
         });

@@ -5,6 +5,7 @@ import {Box} from '@mui/system';
 const IssueForm = () => {
 	const [name, setName] = useState("");
 	const [address, setAddress] = useState("");
+	const [telephone, setTelephone] = useState("");
 	const [topic, setTopic] = useState("");
 	const [content, setContent] = useState("");
 
@@ -13,6 +14,7 @@ const IssueForm = () => {
 		const issue = {
 			nameIssue: name,
 			addressIssue: address,
+			telephoneIssue: telephone,
 			topicIssue: topic,
 			contentIssue: content  
 		};
@@ -33,6 +35,9 @@ const IssueForm = () => {
 					</Box>
 					<Box mt={2}>
 						<TextField type="text" placeholder="กรอกที่อยู่ของผู้ร้องเรียน" sx={{width: 500}} onChange={event => setAddress(event.target.value)} required/>
+					</Box>
+					<Box mt={2}>
+						<TextField type="tel" placeholder="กรอกเบอร์โทรศัพท์ของผู้ร้องเรียน" sx={{width: 500}} onChange={event => setTelephone(event.target.value)} required/>
 					</Box>
 					<Box mt={2}>
 						<TextField type="text" placeholder="ระบุหัวข้อเรื่องที่จะร้องเรียน" sx={{width: 500}} onChange={event => setTopic(event.target.value)} required/>
