@@ -35,6 +35,9 @@ Platfrom for requesting any social issues to be broadcasted on Top-Mosted Popula
 
 ### Video Resource
 
+- [EN: Learn the MERN Stack - Full Tutorial (MongoDB, Express, React, Node.js) by freeCodeCamp](https://www.youtube.com/watch?v=7CqJlxBYj-M)
+- [TH: สอน ReactJS สร้างระบบ CRUD ด้วย MERN Stack by Patiphan Phengpao](https://www.youtube.com/watch?v=-RCZ0rZvoAU)
+
 ### Text Resource
 
 ## Guide
