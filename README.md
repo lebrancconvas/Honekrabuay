@@ -33,6 +33,10 @@ Platfrom for requesting any social issues to be broadcasted on Top-Mosted Popula
 
 ## Resource
 
+### Video Resource
+
+### Text Resource
+
 ## Guide
 
 ### Setup
