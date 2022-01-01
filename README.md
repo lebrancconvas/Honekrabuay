@@ -16,15 +16,15 @@ Platfrom for requesting any social issues to be broadcasted on Top-Mosted Popula
 
 ### Programming Language
 
-- HTML
+- HTML (Pure + Javascript Extension)
 - CSS
 - Javascript (ES6+, NodeJS, Javascript Extension)
 
 ### Front-End
 
 - ReactJS
-  - React Router
-  - Material UI
+  - React Router (React's Routing Management)
+  - Material UI (React's UI Library)
 
 ### Back-End
 
