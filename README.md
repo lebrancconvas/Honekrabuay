@@ -14,6 +14,12 @@ Platfrom for requesting any social issues to be broadcasted on Top-Mosted Popula
 
 ## Tools
 
+### Programming Language
+
+- HTML
+- CSS
+- Javascript (ES6+, NodeJS, Javascript Extension)
+
 ### Front-End
 
 - ReactJS
