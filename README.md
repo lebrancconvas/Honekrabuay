@@ -31,6 +31,10 @@ Platfrom for requesting any social issues to be broadcasted on Top-Mosted Popula
 
 ### DevOps
 
+- Git (Version Control)
+  - Github (Repository's Host)
+- Docker (Container)
+
 ## Resource
 
 ### Video Resource
