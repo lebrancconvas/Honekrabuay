@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Issue = new mongoose.createSchema({
+const Issue = new mongoose.Schema({
     name: { type: String, require: true },
     address: { type: String, require: true },
     telephone: { type: String, require: true },
