@@ -35,6 +35,10 @@ Platfrom for requesting any social issues to be broadcasted on Top-Mosted Popula
   - Github (Remote Repository)
 - Docker (Container)
 
+## Text Editor
+
+- Visual Studio Code
+
 ## Resource
 
 ### Video Resource
