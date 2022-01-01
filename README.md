@@ -6,6 +6,8 @@ Platfrom for requesting any social issues to be broadcasted on Top-Mosted Popula
 
 ## Purpose
 
+## Boundary & Limitation
+
 ## Feature
 
 [Feature Update](https://github.com/lebrancconvas/Honekrabuay/tree/master/Version)
