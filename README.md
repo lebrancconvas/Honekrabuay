@@ -12,7 +12,7 @@ Platfrom for requesting any social issues to be broadcasted on Top-Mosted Popula
 
 [Feature Update](https://github.com/lebrancconvas/Honekrabuay/tree/master/Version)
 
-## Tools
+## Tools [(Stack)](https://stackshare.io/lebrancconvas/honekrabuay)
 
 ### Programming Language
 
